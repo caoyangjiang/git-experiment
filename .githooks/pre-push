@@ -2,14 +2,14 @@
 
 ############## Protect newcodec branch from direct push ############## 
 
-protected_branch='newcodec'
-current_branch=$(git symbolic-ref HEAD --short)
+# protected_branch='newcodec'
+# current_branch=$(git symbolic-ref HEAD --short)
 
-if [ $protected_branch = $current_branch ]
-then
-    echo -e "\n[PRE-PUSH HOOK ERROR]: Do not push into \"$protected_branch\" branch!\n"
-    exit 1 # push will not execute
-fi
+# if [ $protected_branch = $current_branch ]
+# then
+#     echo -e "\n[PRE-PUSH HOOK ERROR]: Do not push into \"$protected_branch\" branch!\n"
+#     exit 1 # push will not execute
+# fi
 
 ############## Add commit note############## 
 
